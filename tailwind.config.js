@@ -20,7 +20,7 @@ module.exports = {
         emerald: colors.emerald
       },
       typography: (theme) => ({
-        dark: {
+        DEFAULT: {
           css: {
             color: theme("colors.gray.700"),
             h2: {
@@ -46,7 +46,7 @@ module.exports = {
             }
           }
         },
-        DEFAULT: {
+        dark: {
           css: {
             color: theme("colors.gray.300"),
             h2: {
@@ -70,6 +70,9 @@ module.exports = {
         }
       })
     }
+  },
+  variants: {
+    typography: ["dark"],
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
