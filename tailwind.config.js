@@ -7,7 +7,7 @@ module.exports = {
     content: ["./src/**/*.{js,mdx}", "./next.config.js"],
     transform: { mdx: mdx.sync }
   },
-  darkMode: "class",
+  darkMode: "media",
   theme: {
     extend: {
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
